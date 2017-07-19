@@ -1,0 +1,78 @@
+@import "utilz"
+@import "variables"
+@import "typography"
+@import "layout"
+@import "navigation"
+@import "footer"
+
+*, *:before, *:after
+  box-sizing: border-box
+
+ul, li
+  margin: 0
+  padding: 0
+
+li
+  list-style-type: none
+
+html
+  overflow: hidden
+  font-size: 62.5%
+
+body
+  margin: 0
+  padding: 0
+  position: static
+  overflow-y: hidden
+  background-color: $grey-dark
+  width: 100%
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+
+  &.inactive
+    position: fixed
+    overflow-y: scroll
+
+  &.dk-blue
+    .outer-wrapper
+      background-color: $blue
+
+    h1, h2, h3, h4, h5, h6 p, .title
+      color: $peach-ultra
+
+    button, input[type="submit"], a.button
+      background: $peach-bg
+      color: $blue
+
+  &.blue
+    .outer-wrapper
+      background-color: $blue-ultra
+  &.peach
+    .outer-wrapper
+      background-color: $peach-ultra
+  &.green
+    .outer-wrapper
+      background-color: $green-bg
+  &.mint
+    .outer-wrapper
+      background-color: $mint
+  &.cta
+    .outer-wrapper
+      background-color: $cta
+
+.outer-wrapper
+  width: 100%
+  height: 100%
+  overflow: hidden
+  padding: 0
+  position: absolute
+  left: 50%
+  top: 50%
+  max-width: $max-width
+  max-height: $max-height
+  transform: translate(-50%, -50%)
+
+.inner-wrapper
+  display: block
+  width: 100%
+  height: 100%
+  overflow: hidden

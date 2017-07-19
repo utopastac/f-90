@@ -1,0 +1,51 @@
+/* lightweight 12 column grid */
+$grid-columns: 12
+$grid-max-width: 100%
+
+@mixin min($width)
+  @media screen and (min-width: $width)
+    @content
+
+@mixin max($width)
+  @media screen and (max-width: $width)
+    @content
+
+@mixin offset($col, $size: $screen-m)
+  @include min($size)
+    margin-left: percentage($col/$grid-columns)
+
+@mixin offsetRight($col, $size: $screen-m)
+  @include min($size)
+    margin-right: percentage($col/$grid-columns)
+
+@mixin columnsWide($col, $size)
+  @include min($size)
+    width: percentage($col/$grid-columns)
+  
+@mixin center-box
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+%centered
+  margin: 0 auto
+
+%container
+  padding: 0 0.5em
+  @include min($screen-m)
+    padding: 0 2em
+
+.no-break
+  white-space: nowrap
+
+.row
+  //@extend .clearfix
+  @extend %centered
+  width: 100%
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  max-width: $grid-max-width
+  
+
