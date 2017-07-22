@@ -1,16 +1,21 @@
-$baseSize: 16
+$baseSize: 10
 $sans: "futura-pt", sans-serif
 $serif: "grad", serif
 
 @mixin fontSize($size, $line)
-  font-size: $size / 16 + rem
+  font-size: $size / $baseSize + rem
   line-height: $line / $size
+
+%body-2
+  font-family: $serif
+  @include fontSize(28, 34)
 
 %body-1
   @include fontSize(20, 26)
 
 %body-0
-  @include fontSize(16, 19)
+  @include fontSize(18, 19)
+  font-style: italic
 
 %heading-4
   font-family: $serif
@@ -23,20 +28,20 @@ $serif: "grad", serif
   font-weight: 600
 
 %heading-2
-  font-family: $serif
-  @include fontSize(34, 36)
-  font-weight: 600
+  font-family: $sans
+  @include fontSize(32, 36)
+  font-weight: 500
 
 %heading-1
-  font-family: $serif
+  font-family: $sans
   @include fontSize(24, 26)
-  font-weight: 600
+  font-weight: 500
 
 %heading-0
   font-family: $sans
-  @include fontSize(14, 18)
-  text-transform: uppercase
-  font-weight: 600
+  @include fontSize(20, 18)
+  font-weight: 500
+
 
 %button
   @extend %heading-1
@@ -56,11 +61,19 @@ h2, h3, h4, h5, h6, p, li, blockquote
   margin: 0
 
 a
-  text-decoration: none
+  text-decoration: underline
+  //border-bottom: 2px solid $text-colour
+  font-weight: 600
   color: $text-colour
 
-p
+p, li
   @extend %body-1
+
+figcaption
+  @extend %body-0
+
+p.large
+  @extend %body-2
 
 h1, h2, h3, h4, h5, h6 p
   a
@@ -68,16 +81,33 @@ h1, h2, h3, h4, h5, h6 p
 
 h1
   @extend %heading-4
+  margin: 0
+
+  + h2
+    margin-top: 7rem
+
+h1.large
+  @include fontSize(120, 120)
+
+  + p
+    margin-top: 6rem
   
 h2
   @extend %heading-3
+
+  + h2
+    margin-top: 7rem
   
 h3
   @extend %heading-2
 
 h4
-  @extend %body-0
-  font-weight: 600
+  @extend %heading-1
 
 h5
   @extend %heading-0
+
+h6
+  @include fontSize(14, 14)
+  text-transform: uppercase
+  font-style: normal

@@ -1,0 +1,22 @@
+- content_for :title, "Playpress - toys for big imaginations - f-90"
+- @body_id = "playpress"
+- @body_class = "cream"
+
+.row
+  .main-content
+    = render "shared/blog_intro", :title => "Playpress", :content => "Playpress is a new construction toy, designed and manufatured in the UK. Made out of recycled cardboard, it is designed as an environmentally friendly, pocket-money price toy, but retaining all the fun of well-known brands like Lego."
+      
+    = render "shared/gallery", :img => "placeholder.png", :cap => "This is a comment"
+
+    = render "shared/blog_section", :title => "The role", :content => "Playpress is a new construction toy, designed and manufatured in the UK. Made out of recycled cardboard, it is designed as an environmentally friendly, pocket-money price toy, but retaining all the fun of well-known brands like Lego."
+
+    %section.content
+      %h3 The role
+      %p Playpress is a new construction toy, designed and manufatured in the UK. Made out of recycled cardboard, it is designed as an environmentally friendly, pocket-money price toy, but retaining all the fun of well-known brands like Lego.
+    = render "shared/gallery", :img => "placeholder.png", :cap => "This is a woof"
+    = render "shared/gallery", :img => "placeholder.png", :cap => "Bark is a comment"
+
+  .side-content.fixed
+    = render "shared/blog_meta", :date => "2013-2017", :role => "Designer"
+    = render "shared/blog_navigation", :anchors => [{title: "Woof", link: "#bark"}, {title: "Bark", link: "#bark"}, {title: "Leik", link: "#bark"}]
+    

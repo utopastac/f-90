@@ -1,0 +1,33 @@
+- @body_id = "home"
+- @body_class = "mint"
+
+.row
+  .main-content
+    %h1 I’m Peter, a product designer, creative prototyper, & researcher.
+    %h2
+      I’ve founded a
+      = link_to "company", playpress_path
+      , worked in
+      = link_to "startups", circles_path
+      & huge
+      = link_to "companies", marksandspencer_path
+      , and been part of digital
+      = link_to "transformations.", advertising_path
+    %h2
+      I am very experienced in designing and facilitating creative
+      = link_to "workshops", workshops_path
+      and
+      = link_to "design sprints.", design_sprints_path
+  .side-content
+    = render "shared/contact_list"
+
+%section#resume
+  %header
+    %h3 A potted resumé
+
+  %ul
+    = render "shared/home_role_summary", :title => "Find Circles", :meta => "2016-2017 • Head of product design", :detail => "As a founding member, I have looked after our creative process, UX and UI design, research and much of the front-end codebase (React Native).", :path => circles_path
+    = render "shared/home_role_summary", :title => "M&S", :meta => "2013-2016 • Lead product designer", :detail => "As a founding member, I have looked after our creative process, UX and UI design, research and much of the front-end codebase (React Native).", :path => marksandspencer_path
+    = render "shared/home_role_summary", :title => "Advertising & agency", :meta => "2005-2013 • Various design/creative/tech", :detail => "As a founding member, I have looked after our creative process, UX and UI design, research and much of the front-end codebase (React Native).", :path => advertising_path
+
+    

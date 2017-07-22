@@ -40,7 +40,6 @@ $grid-max-width: 100%
   white-space: nowrap
 
 .row
-  //@extend .clearfix
   @extend %centered
   width: 100%
   position: relative
@@ -49,3 +48,19 @@ $grid-max-width: 100%
   max-width: $grid-max-width
   
 
+.main-content
+  @include columnsWide(8, $screen-m)
+  @include offsetRight(1, $screen-m)
+
+.side-content
+  @include columnsWide(3, $screen-m)
+
+section.content
+  @extend .row
+  margin-top: 7em
+
+  h3
+    @include columnsWide(3, $screen-m)
+
+  p
+    @include columnsWide(9, $screen-m) 
