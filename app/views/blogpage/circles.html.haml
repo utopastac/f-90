@@ -1,0 +1,19 @@
+- content_for :title, "Playpress - toys for big imaginations - f-90"
+- @body_id = "playpress"
+- @body_class = "cream"
+
+.row
+  .main-content
+    = render "shared/blog_intro", :title => "Find Circles", :content => "Find Circles is a peer-led mentoring app for people with mental health issues. It matches people to professionally designed, facilitated courses  to develop new skills in a supportive, collaborative environment, supported by people with real lived experience."
+      
+    = render "shared/gallery", :img => "placeholder.png", :cap => "This is a comment"
+
+    = render "shared/blog_section", :title => "The role", :content => "I joined Circles at the beginning, as a founding member, in October 2016. Having spent the evenings for a few months prior bootstrapping a discovery process, we dived in to build an MVP. After a year of research insight, we are currently commited to building the right product to launch in September.\n\nAt Circles, I have run a full, iterative UX process, including over 150 1-1 user interviews, creative workshops and many design and product iterations.\n\nI also managed the front-end development in our early days, releasing the app cross platform with feature parity using React Native."
+
+    = render "shared/gallery", :img => "placeholder.png", :cap => "This is a woof"
+    = render "shared/gallery", :img => "placeholder.png", :cap => "Bark is a comment"
+
+  .side-content.fixed
+    = render "shared/blog_meta", :date => "2013-2017", :role => "Designer"
+    = render "shared/blog_navigation", :anchors => [{title: "Woof", link: "#bark"}, {title: "Bark", link: "#bark"}, {title: "Leik", link: "#bark"}]
+    

@@ -21,9 +21,12 @@ li
 html
   font-size: 62.5%
   background: white
+  margin: 0
+  padding: 0
 
 body
   padding: 0
+  margin: 4em 0 0 0
   width: 100%
   -webkit-tap-highlight-color: rgba(0,0,0,0)
 
@@ -46,7 +49,7 @@ body
   &.mint
     background-color: #EAF3F1
   &.cream
-    background-color: #FFFDFA
+    background-color: #F5F2E7
 
 %inner-content
   width: 100%
@@ -56,9 +59,9 @@ body
 
 main
   @extend %inner-content
-  padding: 7em 1em 0 1em
+  padding: 7em 1em
   @include min($screen-m)
-    padding: 7em 2em 0 2em
+    padding: 7em 2em
 
 footer
   padding: 10em 1em
