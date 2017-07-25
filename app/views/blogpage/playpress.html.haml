@@ -8,15 +8,16 @@
       
     = render "shared/gallery", :img => "placeholder.png", :cap => "This is a comment"
 
-    = render "shared/blog_section", :title => "The role", :content => "Playpress is a new construction toy, designed and manufatured in the UK. Made out of recycled cardboard, it is designed as an environmentally friendly, pocket-money price toy, but retaining all the fun of well-known brands like Lego."
-
-    %section.content
-      %h3 The role
-      %p Playpress is a new construction toy, designed and manufatured in the UK. Made out of recycled cardboard, it is designed as an environmentally friendly, pocket-money price toy, but retaining all the fun of well-known brands like Lego.
+    = render "shared/blog_section", :title => "The role", :content => "Playpress was born of a long development process by Matthew, my younger brother. He was very keen to develop a toy range that could offer the same enjoyment he had when he was younger, but be more affordable - giving children the chance to build whole cities for a small price.\n\nI started helping Matthew refine his designs and attempt to build a market strategy. I helped find manufacuring partners, develop a cohesive illustration style, and advise on the brand direction.", :id => "role"
+    
     = render "shared/gallery", :img => "placeholder.png", :cap => "This is a woof"
     = render "shared/gallery", :img => "placeholder.png", :cap => "Bark is a comment"
 
+    = render "shared/blog_section", :title => "The product", :content => "So far there are several sets in active production and being sold. After much experimentation, a good manufacturing partner was found and an excellent material. The toys are currently being sold in independent retailers and also on notonthehighstreet.com", :id => "future"
+
+    = render "shared/blog_section", :title => "The future", :content => "Matthew is now taking the project forward with a close friend. I remain involved to provide advice and product design direction, and to help with the digital aspects of the project.", :id => "future"
+
   .side-content.fixed
     = render "shared/blog_meta", :date => "2013-2017", :role => "Designer"
-    = render "shared/blog_navigation", :anchors => [{title: "Woof", link: "#bark"}, {title: "Bark", link: "#bark"}, {title: "Leik", link: "#bark"}]
+    = render "shared/blog_navigation", :anchors => [{title: "The role", link: "#role"}, {title: "Future", link: "#future"}, {title: "Leik", link: "#bark"}]
     

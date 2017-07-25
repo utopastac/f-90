@@ -1,0 +1,22 @@
+- content_for :title, "Playpress - toys for big imaginations - f-90"
+- @body_id = "playpress"
+- @body_class = "cream"
+
+.row
+  .main-content
+    = render "shared/blog_intro", :title => "Advertising & agency", :content => "I began working in digital design and advertising soon after finishing my degree. I worked at several big agencies (Including Syzygy and VML London) across massive brands. It was here I learned my development skills and the value of rapid prototyping."
+      
+    = render "shared/gallery", :img => "placeholder.png", :cap => "This is a comment"
+
+    = render "shared/blog_section", :title => "Syzygy", :content => "I started as a junior designer in Syzygy, working mainly with Mazda and Mercedes as clients. I worked on the digital campains for major car launches, and worked closely with excellent creative developers.\n\nI caught the programming bug, and started experiementing with creating games in Actionscript 3. I quickly progressed to a role as a creative technologist, where I was working on both design and development, inbetween the creative teams and the technical teams.", :id => "syzygy"
+
+    = render "shared/blog_section", :title => "VML London", :content => "When I joined VML, I was part of a small team as a 'Hypermedia designer'. The team's role was, essentially, to provide inspiration and advice to the technical and creative teams to make their ideas better.\n\nWe sat directly between the two, creating prototypes, interaction designs, animations, and sometimes full products for clients like Audi and Microsoft.", :id => "syzygy"
+
+    = render "shared/blog_section", :title => "Southpaw", :content => "At Southpaw (Nexus|H) I was brought on as the begining point of an in house digital team. In my role as Interactive art director, I was responsible for the digital output of the company.\n\nI lead a team of 4 which spanned both design and technical roles. We worked on everything from full ad campaigns, to expansive pitches for Honda, to full site design projects for Suzuki.", :id => "southpaw"
+
+    = render "shared/blog_section", :title => "Southpaw", :content => "Haymarket Network is the internal digital studio for Haymarket publishing and works on internal and external clients. I was brought on to lead design for high profile projects for the IAAF, the London Olympic Ceremonies and The Rugby World Cup. Managing a small team, we produced high quality visual design work with a focus on innovation.", :id => "southpaw"
+
+  .side-content.fixed
+    = render "shared/blog_meta", :date => "2013-2017", :role => "Designer"
+    = render "shared/blog_navigation", :anchors => [{title: "Syzygy", link: "#syzygy"}, {title: "VML London", link: "#vml"}, {title: "Southpaw", link: "#southpaw"}, {title: "Haymarket Network", link: "#haymarket"}]
+    

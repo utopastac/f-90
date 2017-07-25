@@ -1,2 +1,17 @@
 ol#page-navigation
+  margin-top: 5em
+
   li
+    margin-bottom: 1rem
+    position: relative
+    cursor: pointer
+
+    &:before
+      content: ""
+      position: absolute
+      left: -15px
+      top: 8px
+      height: 10px
+      width: 15px
+      background: image-url("nav-arrow.png") no-repeat left center
+      background-size: auto 100%

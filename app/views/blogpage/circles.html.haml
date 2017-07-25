@@ -6,14 +6,25 @@
   .main-content
     = render "shared/blog_intro", :title => "Find Circles", :content => "Find Circles is a peer-led mentoring app for people with mental health issues. It matches people to professionally designed, facilitated courses  to develop new skills in a supportive, collaborative environment, supported by people with real lived experience."
       
-    = render "shared/gallery", :img => "placeholder.png", :cap => "This is a comment"
+    = render "shared/gallery", :img => "circles-main.png", :cap => ""
 
-    = render "shared/blog_section", :title => "The role", :content => "I joined Circles at the beginning, as a founding member, in October 2016. Having spent the evenings for a few months prior bootstrapping a discovery process, we dived in to build an MVP. After a year of research insight, we are currently commited to building the right product to launch in September.\n\nAt Circles, I have run a full, iterative UX process, including over 150 1-1 user interviews, creative workshops and many design and product iterations.\n\nI also managed the front-end development in our early days, releasing the app cross platform with feature parity using React Native."
+    = render "shared/blog_section", :title => "The role", :content => "I joined Circles at the beginning, as a founding member, in October 2016. Having spent the evenings for a few months prior bootstrapping a discovery process, we dived in to build an MVP. After a year of research insight, we are currently commited to building the right product to launch in September.\n\nAt Circles, I have run a full, iterative UX process, including over 150 1-1 user interviews, creative workshops and many design and product iterations.\n\nI also managed the front-end development in our early days, releasing the app cross platform with feature parity using React Native.", :id => "role"
 
-    = render "shared/gallery", :img => "placeholder.png", :cap => "This is a woof"
+    = render "shared/gallery", :img => "placeholder.png", :cap => "I worked closely with an illustrator and animator to set the tone for the brand"
     = render "shared/gallery", :img => "placeholder.png", :cap => "Bark is a comment"
 
+    = render "shared/blog_section", :title => "The App", :content => "The app has been tested with several cohorts of users and has gone through several iterations. Working closely with our users, we followed a highly iterative approach to the product design, releasing early and often.\n\nBy taking a research first approach to product development...Circles now offers short, online only, group-based practical learning programmes based around mental health. These courses are designed by experts and delivered by experienced peer mentors to small groups of 4-8 people. The courses are designed to be collaborative, giving a sense of purpose to the group in order to try and develop a connection that they can rely on in the future.", :id => "app"
+
+    = render "shared/gallery", :img => "placeholder.png", :cap => "Bark is a comment"
+
+    = render "shared/gallery", :img => "circles-illustrations.png", :cap => "I worked closely with an illustrator and animator to set the tone for the brand"
+    = render "shared/gallery", :img => "placeholder.png", :cap => "Bark is a comment"
+
+    = render "shared/blog_section", :title => "Research", :content => "Over the course of building our product over the first 10 months, I conducted 100 targetted 1-1 interviews, 10 group workshops, and managed remote research.\n\nDue to the nature of the product, it was especially important to try and understand where the gaps in peoples care really lies.\n\nFeeding this insight back into product design process has been a vital part of feeling confident in the company direction.", :id => "research"
+
+    = render "shared/blog_section", :title => "Front-end dev", :content => "The core of the app is built using React Native and Redux to ensure we could launch with feature parity across iOS and Android. In the early days of the company, I built all of the front-end of the app. As we hired more engineers, I have taken to just being involved in complex interaction design and UI development.\n\nI have also created many html and rails based prototypes for testing purposes. It has been important at many stages of development to have high fidelity (in interaction terms) prototypes for both our investors and for research.\n\n, :id => "front-end"
+
   .side-content.fixed
-    = render "shared/blog_meta", :date => "2013-2017", :role => "Designer"
-    = render "shared/blog_navigation", :anchors => [{title: "Woof", link: "#bark"}, {title: "Bark", link: "#bark"}, {title: "Leik", link: "#bark"}]
+    = render "shared/blog_meta", :date => "2016-2017", :role => "Head of product design"
+    = render "shared/blog_navigation", :anchors => [{title: "The role", link: "#role"}, {title: "The App", link: "#app"}, {title: "Research", link: "#research"}, {title: "Front-end", link: "#front-end"}]
     
