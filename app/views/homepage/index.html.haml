@@ -5,14 +5,15 @@
   .main-content
     %h1 I’m Peter, a product designer, creative prototyper, & researcher.
     %h2
-      I’ve founded a
-      = link_to "company", playpress_path
-      , worked in
-      = link_to "startups", circles_path
-      , huge
-      = link_to "companies", marksandspencer_path
-      , and been part of digital
-      = link_to "transformations.", advertising_path
+      %span
+        I’ve founded a
+        = link_to "company", playpress_path
+        , worked in
+        = link_to "startups", circles_path
+        , huge
+        = link_to "companies", marksandspencer_path
+        , and been part of digital
+        = link_to "transformations.", advertising_path
     %h2
       I am very experienced in designing and facilitating creative
       = link_to "workshops", workshops_path
@@ -26,8 +27,8 @@
     %h3 A potted resumé
 
   %ul
-    = render "shared/home_role_summary", :title => "Find Circles", :meta => "2016-2017 • Head of product design", :detail => "As a founding member, I have looked after our creative process, UX and UI design, research and much of the front-end codebase (React Native).", :path => circles_path
-    = render "shared/home_role_summary", :title => "M&S", :meta => "2013-2016 • Lead product designer", :detail => "In 3 years at M&S I worked across a variety of teams in product design, creative, research focused roles using whatever techniques were appropriate to rapidly test our hypotheses", :path => marksandspencer_path
-    = render "shared/home_role_summary", :title => "Advertising & agency", :meta => "2005-2013 • Various design/creative/tech", :detail => "After graduation, I worked in a variety of different digital agencies. I held numerous roles, from interactive Art Direction to Creative technologist.", :path => advertising_path
+    = render "shared/home_role_summary", :title => "Find Circles", :img => "placeholder.png", :meta => "2016-2017 • Head of product design", :detail => "As a founding member, I have looked after our creative process, UX and UI design, research and much of the front-end codebase (React Native).", :path => circles_path
+    = render "shared/home_role_summary", :title => "M&S", :img => "placeholder.png", :meta => "2013-2016 • Lead product designer", :detail => "In 3 years at M&S I worked across a variety of teams in product design, creative, research focused roles using whatever techniques were appropriate to rapidly test our hypotheses", :path => marksandspencer_path
+    = render "shared/home_role_summary", :title => "Advertising & agency", :img => "placeholder.png", :meta => "2005-2013 • Various design/creative/tech", :detail => "After graduation, I worked in a variety of different digital agencies. I held numerous roles, from interactive Art Direction to Creative technologist.", :path => advertising_path
 
     

@@ -76,8 +76,15 @@ p.large
   @extend %body-2
 
 h1, h2, h3, h4, h5, h6 p
+  span
+    position: relative
   a
-    color: #0ABE88
+    display: inline-block
+    background-color: $yellow
+    &:hover
+      background-color: $text-colour
+      color: white
+    //box-shadow: 7px 0 0 #7f7f7f, -7px 0 0 #7f7f7f
 
 h1
   @extend %heading-4

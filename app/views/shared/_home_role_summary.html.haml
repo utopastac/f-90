@@ -1,8 +1,11 @@
 %li
-  %h2
-    = title
-  %h4
-    = meta
-  %p
-    = detail
-  = link_to "More", path
+  = link_to path do
+    .image
+      = image_tag img
+    .content
+      %h2
+        = title
+      %h4
+        = meta
+      %p
+        = detail
