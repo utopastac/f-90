@@ -1,0 +1,33 @@
+- content_for :title, "Design sprints - rapid, tested co-creation"
+- @body_id = "design-sprints"
+- @body_class = "pink"
+
+.row
+  .main-content
+    = render "shared/blog_intro", :title => "Design Sprints", :content => "When faced with a defined problem and many different solutions, a well planned and facilitated design sprint can be the fastest way of getting to a well thought through solution that has been tested with real people. I have designed and run many design sprints with groups of all ability levels."
+      
+    = render "shared/gallery", :img => "circles-main.png", :cap => ""
+
+    = render "shared/blog_section", :title => "Planning", :content => "No two workshops should be the same. Most of the time involved is in design an preparation. I undertake all the necessary research, looking at team dynamics, the nature of the problem we're trying to solve, potential outcomes, and follow up steps.", :id => "role"
+
+    = render "shared/blog_section", :title => "Challengind preconceptions", :content => "No two workshops should be the same. Most of the time involved is in design an preparation. I undertake all the necessary research, looking at team dynamics, the nature of the problem we're trying to solve, potential outcomes, and follow up steps.", :id => "role"
+
+    = render "shared/blog_section", :title => "Exploring possibilities", :content => "No two workshops should be the same. Most of the time involved is in design an preparation. I undertake all the necessary research, looking at team dynamics, the nature of the problem we're trying to solve, potential outcomes, and follow up steps.", :id => "role"
+
+    = render "shared/gallery", :img => "circles-main.png", :cap => ""
+
+    = render "shared/blog_section", :title => "Research", :content => "Without sensible analysis, workshops can feel pointless - a wide generation of thoughts and ideas, but with no direct outcome. An important part of my role is, alongside key stakeholders, analysing the output and forming actionable outcomes to make sure everyone involved feels their input was valuable.\n\nThis can take the form of follow up sessions, short, easily digestible presentations, defined principles to follow, or directly working with the teams to produce something that can be taken to users.", :id => "role"
+
+    = render "shared/gallery", :img => "circles-main.png", :cap => ""
+
+    = render "shared/blog_section", :title => "Design", :content => "At Marks and Spencer, I facilitated many workshops involving teams from small, implementation focused groups all the way to heads of department.\n\nI helped several senior management teams during a company wide innovation project, designing workshops to encourage collaboration, creative thinking, empathy and a 'disagree and commit' attitude.", :id => "marks"
+
+    = render "shared/blog_section", :title => "Rapid, high fidelity prototyping", :content => "A little bit like micro hack days. Keeping people focused and goal oriented and as shallow as necessary. Tools etc.", :id => "circles"
+
+    = render "shared/blog_section", :title => "Getting in front of users", :content => "A little bit like micro hack days. Keeping people focused and goal oriented and as shallow as necessary. Tools etc.", :id => "circles"
+
+    = render "shared/blog_section", :title => "Outcomes", :content => "A little bit like micro hack days. Keeping people focused and goal oriented and as shallow as necessary. Tools etc.", :id => "circles"
+
+  .side-content.fixed
+    = render "shared/blog_navigation", :anchors => [{title: "The role", link: "#role"}, {title: "The App", link: "#app"}, {title: "Research", link: "#research"}, {title: "Front-end", link: "#front-end"}]
+    

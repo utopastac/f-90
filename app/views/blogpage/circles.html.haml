@@ -1,5 +1,5 @@
-- content_for :title, "Playpress - toys for big imaginations - f-90"
-- @body_id = "playpress"
+- content_for :title, "Find Circles - mentored peer support"
+- @body_id = "circles"
 - @body_class = "cream"
 
 .row
@@ -18,13 +18,17 @@
     = render "shared/gallery", :img => "placeholder.png", :cap => "Bark is a comment"
 
     = render "shared/gallery", :img => "circles-illustrations.png", :cap => "I worked closely with an illustrator and animator to set the tone for the brand"
-    = render "shared/gallery", :img => "placeholder.png", :cap => "Bark is a comment"
 
     = render "shared/blog_section", :title => "Research", :content => "Over the course of building our product over the first 10 months, I conducted 100 targetted 1-1 interviews, 10 group workshops, and managed remote research.\n\nDue to the nature of the product, it was especially important to try and understand where the gaps in peoples care really lies.\n\nFeeding this insight back into product design process has been a vital part of feeling confident in the company direction.", :id => "research"
 
-    = render "shared/blog_section", :title => "Front-end dev", :content => "The core of the app is built using React Native and Redux to ensure we could launch with feature parity across iOS and Android. In the early days of the company, I built all of the front-end of the app. As we hired more engineers, I have taken to just being involved in complex interaction design and UI development.\n\nI have also created many html and rails based prototypes for testing purposes. It has been important at many stages of development to have high fidelity (in interaction terms) prototypes for both our investors and for research.\n\n, :id => "front-end"
+    = render "shared/gallery", :img => "placeholder.png", :cap => "Research was run collaboratively with the team"
+    = render "shared/gallery", :img => "placeholder.png", :cap => "Insights were shared in bitesize, actionable chunks, and formed the basis of our hypothesis building"
+
+    = render "shared/blog_section", :title => "Front-end dev", :content => "The core of the app is built using React Native and Redux to ensure we could launch with feature parity across iOS and Android. In the early days of the company, I built all of the front-end of the app. As we hired more engineers, I have taken to just being involved in complex interaction design and UI development.\n\nI have also created many html and rails based prototypes for testing purposes. It has been important at many stages of development to have high fidelity (in interaction terms) prototypes for both our investors and for research.", :id => "front-end"
+
+    = render "shared/gallery", :img => "placeholder.png", :cap => "As well as the react native and redux codebase, I run all of the front-end work for our websites and landing pages"
 
   .side-content.fixed
-    = render "shared/blog_meta", :date => "2016-2017", :role => "Head of product design"
+    = render "shared/blog_meta", :date => "2016-2017", :role => "Head of product design", :url => "https://www.findcircles.io"
     = render "shared/blog_navigation", :anchors => [{title: "The role", link: "#role"}, {title: "The App", link: "#app"}, {title: "Research", link: "#research"}, {title: "Front-end", link: "#front-end"}]
     
