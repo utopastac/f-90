@@ -4,6 +4,7 @@ section#resume
 
   header
     @include columnsWide(2, $screen-m)
+    margin-bottom: 4em
 
   ul
     @include columnsWide(9, $screen-m)
@@ -12,7 +13,7 @@ section#resume
     margin-bottom: 3em
 
     > a
-      display: flex
+      @extend .row
       text-decoration: none
       font-weight: inherit
 
@@ -23,16 +24,17 @@ section#resume
           color: $green
 
       .image
-        flex: 0.4
+        @include columnsWide(5, $screen-m)
         padding-right: 1em
         overflow: hidden
+        margin-bottom: 1em
 
         img
           width: 100%
         
 
       .content
-        flex: 0.6
+        @include columnsWide(7, $screen-m)
 
     h2
       margin-bottom: 0.2em

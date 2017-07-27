@@ -19,6 +19,7 @@ $grid-max-width: 100%
     margin-right: percentage($col/$grid-columns)
 
 @mixin columnsWide($col, $size)
+  width: 100%
   @include min($size)
     width: percentage($col/$grid-columns)
   
@@ -53,7 +54,20 @@ $grid-max-width: 100%
   @include offsetRight(1, $screen-m)
 
 .side-content
-  @include columnsWide(3, $screen-m)
+  position: fixed
+  top: 0
+  right: -70vw
+  padding-left: 3em
+  width: 70vw
+  height: 100vh
+  background: white
+  @include min($screen-m)
+    position: relative
+    padding-left: 0
+    height: auto
+    background: transparent
+    right: auto
+    @include columnsWide(3, $screen-m)
 
 section.content
   @extend .row
