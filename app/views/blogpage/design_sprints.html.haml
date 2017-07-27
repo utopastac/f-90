@@ -4,29 +4,27 @@
 
 .row
   .main-content
-    = render "shared/blog_intro", :title => "Design Sprints", :content => "When faced with a defined problem and many different solutions, a well planned and facilitated design sprint can be the fastest way of getting to a well thought through solution that has been tested with real people. I have designed and run many design sprints with groups of all ability levels."
+    = render "shared/blog_intro", :title => "Design Sprints", :content => "When faced with a defined problem and many different solutions, a well planned and facilitated design sprint can be the fastest way of getting to a well thought through solution that has been tested with real people. I have designed and run many (exhausting but exciting) design sprints with groups of all ability levels."
       
     = render "shared/gallery", :img => "circles-main.png", :cap => ""
 
-    = render "shared/blog_section", :title => "Planning", :content => "No two workshops should be the same. Most of the time involved is in design an preparation. I undertake all the necessary research, looking at team dynamics, the nature of the problem we're trying to solve, potential outcomes, and follow up steps.", :id => "role"
+    = render "shared/blog_section", :title => "Planning", :content => "A great deal of research has gone into the design sprints I have run. When working at M&S, we ran several sprints, one with our Basket and Checkout team.\n\nTo prepare for the week, we spent a week before doing a thorough competitor and heuristic analysis, with an emphasis on future trends.", :id => "role"
 
-    = render "shared/blog_section", :title => "Challengind preconceptions", :content => "No two workshops should be the same. Most of the time involved is in design an preparation. I undertake all the necessary research, looking at team dynamics, the nature of the problem we're trying to solve, potential outcomes, and follow up steps.", :id => "role"
+    = render "shared/blog_section", :title => "Challenging the team", :content => "I worked with the content and editorial team on a sprint focused around content discovery. The team was made up of everyone from junior picture editors to the directors.\n\nIt's important in a sprint to make sure everyone's voice is heard and heard equally, and we managed to facilitate a very diverse team by challenging their relationships with each other. Tasks were designed to enable people to draw on their experience whilst also being challenged by possibilities they hadn't even considered.", :id => "role"
 
-    = render "shared/blog_section", :title => "Exploring possibilities", :content => "No two workshops should be the same. Most of the time involved is in design an preparation. I undertake all the necessary research, looking at team dynamics, the nature of the problem we're trying to solve, potential outcomes, and follow up steps.", :id => "role"
+    = render "shared/blog_section", :title => "Exploring possibilities", :content => "The key value in my opinion in a design sprint is the vast potential for idea generation and exploration, to the point of exhaustion. With the basket and checkout team, in a 4 hour session we created hundreds of potential solutions when the consesnus at the start was choosing between two. By opening up the possibilities to include the fantastical, we ended up expanding the possible.", :id => "role"
+
+    = render "shared/gallery", :img => "circles-main.png", :cap => "The basket and checkout team beside one of their team idea generation tasks."
+
+    = render "shared/blog_section", :title => "Research", :content => "The whole point of running design sprints is to get closer to user groups. In every instance of running a sprint, our users are recruited well in advance in order to answer some relevant behavioural questions.\n\nBy starting the week having the team focus on the real people they are designing for, we made sure that everything was designed with a real use case and purpose.", :id => "role"
 
     = render "shared/gallery", :img => "circles-main.png", :cap => ""
 
-    = render "shared/blog_section", :title => "Research", :content => "Without sensible analysis, workshops can feel pointless - a wide generation of thoughts and ideas, but with no direct outcome. An important part of my role is, alongside key stakeholders, analysing the output and forming actionable outcomes to make sure everyone involved feels their input was valuable.\n\nThis can take the form of follow up sessions, short, easily digestible presentations, defined principles to follow, or directly working with the teams to produce something that can be taken to users.", :id => "role"
+    = render "shared/blog_section", :title => "Rapid, high fidelity prototyping", :content => "Sprints work best with teams of varied experience and from many discliplines. I have always encouraged people to prototype in ways they see fit, but also ensuring there is a good mixture of technical people in the room. In previous sprints, peeople have created everything from dramatic, video-based prototypes to fully working and integrated applications.", :id => "circles"
 
-    = render "shared/gallery", :img => "circles-main.png", :cap => ""
+    = render "shared/blog_section", :title => "Getting in front of users", :content => "The content team at M&S only had a vague, persona led grasp on their true audience, so having real users in front of them testing their own ideas was very important.\n\nBy having the same 5 users at the end as were introduced at the start of the week, the team could see how their preconceptions matched to reality. Seeing work go from idea to live, interactive test in under a week was genuinely shocking for some.", :id => "circles"
 
-    = render "shared/blog_section", :title => "Design", :content => "At Marks and Spencer, I facilitated many workshops involving teams from small, implementation focused groups all the way to heads of department.\n\nI helped several senior management teams during a company wide innovation project, designing workshops to encourage collaboration, creative thinking, empathy and a 'disagree and commit' attitude.", :id => "marks"
-
-    = render "shared/blog_section", :title => "Rapid, high fidelity prototyping", :content => "A little bit like micro hack days. Keeping people focused and goal oriented and as shallow as necessary. Tools etc.", :id => "circles"
-
-    = render "shared/blog_section", :title => "Getting in front of users", :content => "A little bit like micro hack days. Keeping people focused and goal oriented and as shallow as necessary. Tools etc.", :id => "circles"
-
-    = render "shared/blog_section", :title => "Outcomes", :content => "A little bit like micro hack days. Keeping people focused and goal oriented and as shallow as necessary. Tools etc.", :id => "circles"
+    = render "shared/blog_section", :title => "Outcomes", :content => "The danger with a sprint is the lack of momentum carried forward. With the basket and checkout team at M&S, we made sure to spend lots of time analyising what we had learned, what was potentially actionable, and what could go straight into a backlog. While only small parts of the prototypes made it into a production environment, the design sprint completely re-ordered their priorities and re-endergised the team.", :id => "circles"
 
   .side-content.fixed
     = render "shared/blog_navigation", :anchors => [{title: "The role", link: "#role"}, {title: "The App", link: "#app"}, {title: "Research", link: "#research"}, {title: "Front-end", link: "#front-end"}]
