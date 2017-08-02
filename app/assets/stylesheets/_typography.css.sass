@@ -6,6 +6,13 @@ $serif: "grad", serif
   font-size: $size / $baseSize + rem
   line-height: $line / $size
 
+%block-link
+  display: inline-block
+  background-color: $yellow
+  &:hover
+    background-color: $text-colour
+    color: $green
+
 %body-2
   font-family: $serif
   @include fontSize(28, 34)
@@ -75,6 +82,7 @@ p, li
 
 figcaption
   @extend %body-0
+  color: rgba($text-colour, 0.75)
 
 p.large
   @extend %body-2
@@ -83,11 +91,7 @@ h1, h2, h3, h4, h5, h6 p
   span
     position: relative
   a
-    display: inline-block
-    background-color: $yellow
-    &:hover
-      background-color: $text-colour
-      color: $green
+    @extend %block-link
     //box-shadow: 7px 0 0 #7f7f7f, -7px 0 0 #7f7f7f
 
 h1
