@@ -28,7 +28,6 @@ for(var i=0; i<images.length; i++){
 function closeOverlay(event){
   document.body.classList.remove("fixed");
   TweenMax.to(overlay, 0.25, {autoAlpha: 0, display: "none", ease: Power2.easeOut});
-  //TweenMax.to(overlayContent, 0.2, {scrollTo: {y: 0}});
   TweenMax.set(document.body, {top: 0});
   window.scrollTo(0, scrollPos);
   event.preventDefault();
