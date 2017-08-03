@@ -1,7 +1,7 @@
 !!!
 %html{:lang => "en"}
   %head
-    %title= content_for?(:title) ? yield(:title) : "F-90 - Peter Wright portfolio site"
+    %title= content_for?(:title) ? yield(:title) : "Peter Wright portfolio site and resumé"
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, height=device-height,  maximum-scale=1.0, target-densityDpi=device-dpi"}
     %meta{:name => "apple-mobile-web-app-capable", :content => "yes"}
     %script(src="https://use.typekit.net/fdq4gnc.js")
@@ -38,5 +38,10 @@
           %li
             = link_to "Front-end development", front_end_path
         = render "shared/contact_list"
+
+    #overlay
+      #overlay-bg
+      #overlay-close
+      #overlay-content
 
     = javascript_include_tag "application", "data-turbolinks-track" => true
