@@ -1,4 +1,6 @@
+#meta-cancel.meta-toggle
 %ol#page-navigation
+  %h5 Sections
   - anchors.each do |anchor|
     %li{:class => "scroll", :href => anchor[:link]}
       = anchor[:title]
