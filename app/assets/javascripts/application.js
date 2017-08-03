@@ -11,9 +11,9 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require turbolinks
 //= require 'greensock/TweenMax'
 //= require 'greensock/easing/EasePack'
 //= require 'greensock/utils/Draggable'
 //= require 'greensock/plugins/ScrollToPlugin'
 //= require_tree .
+//= require turbolinks

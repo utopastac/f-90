@@ -1,7 +1,6 @@
 (function() {
   var images = document.querySelectorAll(".gallery img");
   var overlay = document.querySelector("#overlay");
-  var overlayBg = document.querySelector("#overlay-bg");
   var overlayContent = document.querySelector("#overlay-content");
   overlay.addEventListener("click", closeOverlay);
   var scrollPos = 0;
