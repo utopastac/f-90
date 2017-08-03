@@ -21,8 +21,9 @@ $serif: "grad", serif
   @include fontSize(20, 26)
 
 %body-0
-  @include fontSize(18, 19)
-  font-style: italic
+  //font-family: $serif
+  @include fontSize(17, 23)
+  //font-style: italic
 
 %heading-4
   font-family: $serif
@@ -82,7 +83,9 @@ p, li
 
 figcaption
   @extend %body-0
-  color: rgba($text-colour, 0.75)
+  padding-left: 1em
+  border-left: 2px solid $text-colour
+  //color: rgba($text-colour, 0.75)
 
 p.large
   @extend %body-2

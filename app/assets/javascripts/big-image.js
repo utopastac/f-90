@@ -3,8 +3,8 @@ var overlay = document.querySelector("#overlay");
 var overlayBg = document.querySelector("#overlay-bg");
 var overlayContent = document.querySelector("#overlay-content");
 var overlayClose = document.querySelector("#overlay-close");
-overlayBg.addEventListener("click", closeOverlay);
-overlayClose.addEventListener("click", closeOverlay);
+overlay.addEventListener("click", closeOverlay);
+//overlayClose.addEventListener("click", closeOverlay);
 var scrollPos = 0;
 TweenMax.set(overlay, {autoAlpha: 0, display: "none"});
 
@@ -18,7 +18,9 @@ for(var i=0; i<images.length; i++){
       overlayContent.removeChild(overlayContent.firstChild);
     }
     overlayContent.appendChild(img);
-    TweenMax.to(overlay, 0.5, {autoAlpha: 1, display: "block", ease: Power2.easeOut});
+    TweenMax.to(overlay, 0.35, {autoAlpha: 1, display: "block", ease: Power2.easeOut, onUpdate:function(){
+      overlayContent.scrollTop = 0;
+    }});
     event.preventDefault();
   });
 }
@@ -26,6 +28,7 @@ for(var i=0; i<images.length; i++){
 function closeOverlay(event){
   document.body.classList.remove("fixed");
   TweenMax.to(overlay, 0.25, {autoAlpha: 0, display: "none", ease: Power2.easeOut});
+  //TweenMax.to(overlayContent, 0.2, {scrollTo: {y: 0}});
   TweenMax.set(document.body, {top: 0});
   window.scrollTo(0, scrollPos);
   event.preventDefault();
