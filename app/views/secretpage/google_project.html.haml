@@ -1,0 +1,120 @@
+- @body_id = "secret"
+- content_for :title, "Google project 2017"
+
+.row
+  .main-content
+    %h1 Google project
+    %h2 Waiting staff feedback
+
+    %section
+      %header
+        %h1 Problem definition
+
+    %section
+      %header
+        %h1 Approach
+      %p Due to the short nature of the project, I decided to run it as a design sprint for 1. I wanted to get a better understanding of the problems facing waiting staff with regard to feedback and then create something that was easy for me to test.
+
+    %section
+      %header
+        %h1 Initial hypotheses
+        = render "shared/ideas_list" 
+
+    %section
+      %header
+        %h1 Current product analysis
+      %ul
+        %li Uber
+        %li Cards in restaurants
+        %li Links on receipts
+        %li Wahaca payment app
+        %li Ikea feedback buttons
+        %li Online reviews (Amazon)
+
+    %section
+      %header
+        %h1 Research findings
+      %h3 Everyones idea of good service is different
+      %p Sometimes it means being invisible, sometimes it means being loud.
+      %h3 What's the incentive for the waiter?
+      %p
+      %h3 Feedback performace linked to pay
+      %p
+      %h3 Tips are a form of feedback, but not universal
+      %p
+      %h3 Negative feedback is not generally constructive
+      %p
+      %h3 The dining experience isn't all under the waiting staffs control
+      %p Front of house takes the brunt of negative feedback that is out of their control. For instance:
+      %ul.list
+        %li Lack of waiting staff causing delays
+        %li Quality of cooking
+        %li Other diners affecting the experience
+      %h3 Personal circumstance affects the impression of feedback
+      %p Knowing the customers, especially in the case of regulars, affects how the feedback is percieved by the staff.
+      %h3 Friction in current feedback systems creates peverse incentives
+      %p Waiting staff will only ask for feedback to be filled in by diners they consider likely to give good feedback. This means the feedback recieved is warped and not truly representative of diners thoughts.
+      %h3 Friction in the feedback experience makes giving feedback unlikely
+      %p Most feedback mechanisms people have experienced in restaurants are time consuming and difficult.
+      %ul.list
+        %li Anything filled in after leaving the restaurant relies on memory and goodwill.
+        %li Verbal feedback is completely ephemeral and hard to effectively use for staff.
+        %li Being distracted for feedback whilst dining is embarassing and inappropriate. 
+      %h3 Verbal Feedback, even well intentioned, can be intimidating
+      %p  With extremely poor experiences, feedback is very often verbal and distressing - especially the truly negative.
+
+    %section
+      %header
+        %h1 What would bad look like?
+        %p I spent some time after the research coming up with lists of bad ideas, to help me produce some positive principles for the product. These are a few of them:
+      %ul
+        %li Automatic grading, sent to the manager, based entirely on metrics
+        %li Feedback requests based on tip amounts
+        %li Mandatory feedback before paying bill
+        %li Staff pay based on feedback filled in
+
+    %section
+      %header
+        %h1 Principles and success measures  
+      %ul
+        %li Reward friction
+        %li Visible benefits, actual rewards
+        %li Service is personal
+        %li Reward the good, improve the bad
+        %li Loyalty begets loyalty - better service = more loyalty
+
+    %section
+      %header
+        %h1 Ideas
+      = render "shared/idea_card", :title => "Physical feedback checklist", :description => "There are lots of points of 'downtime' within any meal. A tactile, physical system where you can express your feedback without it feeling too personal - for instance, a set of marbles you put into marked areas which are later tallied."
+      = render "shared/idea_card", :title => "Interuption moments", :description => "When is it best to ask a diner for feedback? There are a few 'obvious' interuption moments; Bathroom, payment, between courses, when leaving, after leaving via a CRM reminder, after leaving by memory."
+      = render "shared/idea_card", :title => "Exposed metrics to evaluate service", :description => "Were you happy with long your meal took? Did your waiting staff check in too often or too rarely? How long did you wait for the bill? Using simple responses to these questions, we can build a profile of diner preferences which are exposed to wait staff, so they have the best possibly information on the diners next visit."
+      = render "shared/idea_card", :title => "", :description => ""
+
+    %section
+      %header
+        %h1 Development
+      %p For the purposes of development of my concept into a set of flows, I made the following assumptions/choices:
+      %ul
+        %li I would focus on the experience for one diner, in one restaurant, with one member of waiting staff who has 1 manager
+        %li Staff all have access to per-user authenticated devices
+      = render "shared/screen", :title => "Physical feedback checklist", :description => ""
+
+    %section
+      %header
+        %h1 Testing
+
+    %section
+      %header
+        %h1 Future iterations
+      %p
+        There are many directions it would be possible to take the product into. Some that I have considered but thought to be out of scope for this iteration are:
+      %ul
+        %li Payment within the customer facing app
+        %li Booking tables within the customer facing app
+        %li Recommendation within the cusomter facing app
+        %li Machine learning based assumptions for 'new' diners
+        %li A feedback loop included for the chefs
+        %li Closer links between waiting staff and chefs within staff app to keep the diner informed
+        %li Customer food preferences/allergies
+        %li Other service applications outside of dining

@@ -1,6 +1,6 @@
 $baseSize: 10
 $sans: "futura-pt", sans-serif
-$serif: "grad", serif
+$serif: "futura-pt", sans-serif//"grad", serif
 
 @mixin fontSize($size, $line)
   font-size: $size / $baseSize + rem
@@ -30,29 +30,29 @@ $serif: "grad", serif
   @include fontSize(48, 48)
   @include min($screen-m)
     @include fontSize(64, 62)
-  font-weight: 600
+  font-weight: 300
 
 %heading-3
   font-family: $serif
   @include fontSize(40, 40)
   @include min($screen-m)
     @include fontSize(48, 48)
-  font-weight: 600
+  font-weight: 300
 
 %heading-2
   font-family: $sans
   @include fontSize(32, 36)
-  font-weight: 500
+  font-weight: 300
 
 %heading-1
   font-family: $sans
   @include fontSize(24, 26)
-  font-weight: 500
+  font-weight: 300
 
 %heading-0
   font-family: $sans
   @include fontSize(20, 18)
-  font-weight: 500
+  font-weight: 300
 
 
 %button
@@ -75,7 +75,7 @@ h2, h3, h4, h5, h6, p, li, blockquote
 a
   text-decoration: underline
   //border-bottom: 2px solid $text-colour
-  font-weight: 600
+  font-weight: 400
   color: $text-colour
 
 p, li

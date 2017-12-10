@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   get '/design-sprints', to: 'blogpage#design_sprints', as: 'design_sprints'
   get '/front-end', to: 'blogpage#front_end', as: 'front_end'
 
+  get '/secret/google', to: 'secretpage#google_project', as: 'google'
 
 end
