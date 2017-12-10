@@ -19,31 +19,35 @@ section#resume
 
       &:hover
         //text-decoration: underline
-        // h2
-        //   background-color: $text-colour
-        //   color: $green
+        .content
+          background: $green
+        h2, h3
+          // background-color: $text-colour
+          // color: $green
 
       .image
         @include columnsWide(5, $screen-m)
         padding-right: 1em
         overflow: hidden
         margin-bottom: 1em
-        border-radius: 5px
 
         img
           width: 100%
-          border-radius: 5px
+          border-radius: 0
         
 
       .content
         @include columnsWide(7, $screen-m)
+        padding: 1em
 
-    h2
+    h2, h3
       margin-bottom: 0.2em
       display: inline-block
 
-    h4
+    h4, h5, h6
       margin-bottom: 0.8em
+      font-weight: 500
+
     p
       margin-bottom: 0.8em
     a

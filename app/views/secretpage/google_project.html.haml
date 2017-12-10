@@ -7,114 +7,169 @@
     %h2 Waiting staff feedback
 
     %section
-      %header
-        %h1 Problem definition
+      %h3 Problem definition
+      %div
 
     %section
-      %header
-        %h1 Approach
-      %p Due to the short nature of the project, I decided to run it as a design sprint for 1. I wanted to get a better understanding of the problems facing waiting staff with regard to feedback and then create something that was easy for me to test.
+      %h3 Approach
+      %div
+        %p Due to the short nature of the project, I decided to run it like a one-person design sprint. I wanted to get a better understanding of the problems facing waiting staff with regard to feedback and create something that solves those problems.
 
-    %section
-      %header
-        %h1 Initial hypotheses
-        = render "shared/ideas_list" 
+    -# %section.content
+    -#   %h3 Initial hypotheses
+    -#   %div
+    -#     = render "shared/ideas_list" 
 
-    %section
-      %header
-        %h1 Current product analysis
-      %ul
-        %li Uber
-        %li Cards in restaurants
-        %li Links on receipts
-        %li Wahaca payment app
-        %li Ikea feedback buttons
-        %li Online reviews (Amazon)
+    %section.content
+      %h3 Current product analysis
+      %div
+        %ul
+          %li Uber
+          %li Cards in restaurants
+          %li Links on receipts
+          %li Wahaca payment app
+          %li Ikea feedback buttons
+          %li Online reviews (Amazon)
 
-    %section
-      %header
-        %h1 Research findings
-      %h3 Everyones idea of good service is different
-      %p Sometimes it means being invisible, sometimes it means being loud.
-      %h3 What's the incentive for the waiter?
-      %p
-      %h3 Feedback performace linked to pay
-      %p
-      %h3 Tips are a form of feedback, but not universal
-      %p
-      %h3 Negative feedback is not generally constructive
-      %p
-      %h3 The dining experience isn't all under the waiting staffs control
-      %p Front of house takes the brunt of negative feedback that is out of their control. For instance:
-      %ul.list
-        %li Lack of waiting staff causing delays
-        %li Quality of cooking
-        %li Other diners affecting the experience
-      %h3 Personal circumstance affects the impression of feedback
-      %p Knowing the customers, especially in the case of regulars, affects how the feedback is percieved by the staff.
-      %h3 Friction in current feedback systems creates peverse incentives
-      %p Waiting staff will only ask for feedback to be filled in by diners they consider likely to give good feedback. This means the feedback recieved is warped and not truly representative of diners thoughts.
-      %h3 Friction in the feedback experience makes giving feedback unlikely
-      %p Most feedback mechanisms people have experienced in restaurants are time consuming and difficult.
-      %ul.list
-        %li Anything filled in after leaving the restaurant relies on memory and goodwill.
-        %li Verbal feedback is completely ephemeral and hard to effectively use for staff.
-        %li Being distracted for feedback whilst dining is embarassing and inappropriate. 
-      %h3 Verbal Feedback, even well intentioned, can be intimidating
-      %p  With extremely poor experiences, feedback is very often verbal and distressing - especially the truly negative.
+    %section.content
+      %h3 Research findings
+      %div
+        %p I conducted 4 15-20 minute interviews with friends and peers about their attitudes to giving feedback whilst dining. I also interviewed 4 people who either currently work as waiting staff or have been waiting staff recently. I had a series of questions I wanted to find out more about:
+        %ul.box-list
+          %li Is feedback fair/useful? What could make it useful?
+          %li What’s the motivation of giving feedback for the diner?
+          %li What’s the best time to ask for feedback?
+          %li What systems are there currently in place for giving feedback?
+          %li Do people remember good/bad/mediocre service?
+          %li What are the universally good characteristics of service?
+          %li Does good service increase loyalty?
+          %li What does a waiter do with feedback?
 
-    %section
-      %header
-        %h1 What would bad look like?
+        %h4 Everyones idea of good service is different
+        %p Sometimes it means being invisible, sometimes it means being loud.
+        %h4 What's the incentive for the waiter?
+        %p
+        %h4 Feedback performace linked to pay
+        %p
+        %h4 Tips are a form of feedback, but not universal
+        %p
+        %h4 Negative feedback is not generally constructive
+        %p
+        %h4 People forget service soon after the experience
+        %p Unless the service was exceptionally good or bad, people in the study didn't have good recall of even recent dining experiences.
+        %h4 The dining experience isn't all under the waiting staffs control
+        %p Front of house takes the brunt of negative feedback that is out of their control. For instance:
+        %ul.list
+          %li Lack of waiting staff causing delays
+          %li Quality of cooking
+          %li Other diners affecting the experience
+        %h4 Personal circumstance affects the impression of feedback
+        %p Knowing the customers, especially in the case of regulars, affects how the feedback is percieved by the staff.
+        %h4 Friction in current feedback systems creates peverse incentives
+        %p Waiting staff will only ask for feedback to be filled in by diners they consider likely to give good feedback. This means the feedback recieved is warped and not truly representative of diners thoughts.
+        %h4 Friction in the feedback experience makes giving feedback unlikely
+        %p Most feedback mechanisms people have experienced in restaurants are time consuming and difficult.
+        %ul.list
+          %li Anything filled in after leaving the restaurant relies on memory and goodwill.
+          %li Verbal feedback is completely ephemeral and hard to effectively use for staff.
+          %li Being distracted for feedback whilst dining is embarassing and inappropriate. 
+        %h4 Verbal Feedback, even well intentioned, can be intimidating
+        %p With extremely poor experiences, feedback is very often verbal and distressing - especially the truly negative.
+
+    %section.content
+      %h3 What would bad look like?
+      %div
         %p I spent some time after the research coming up with lists of bad ideas, to help me produce some positive principles for the product. These are a few of them:
-      %ul
-        %li Automatic grading, sent to the manager, based entirely on metrics
-        %li Feedback requests based on tip amounts
-        %li Mandatory feedback before paying bill
-        %li Staff pay based on feedback filled in
+        %ul.box-list
+          %li Automatic staff grading, sent to the manager, based entirely on metrics
+          %li Feedback requests based on tip amounts
+          %li Mandatory feedback before paying bill
+          %li Waiting for 3 weeks then sending out a survey asking for feedback.
+          %li Staff pay based on feedback filled in
 
-    %section
-      %header
-        %h1 Principles and success measures  
-      %ul
-        %li Reward friction
-        %li Visible benefits, actual rewards
-        %li Service is personal
-        %li Reward the good, improve the bad
-        %li Loyalty begets loyalty - better service = more loyalty
+    %section.content
+      %h3 Principles and success measures
+      %div
+        %p In order to judge the quality of the ideas and development, I used the research to come up with some product principles.
+        %ul
+          %li 
+            %h4 Reward friction
+            %p Incentivise feedback to encourage responses that are not at either extreme of the spectrum. If we are taking people's time, reward them for it - but not neccessarily monetarily.
+          %li
+            %h4 Feedback at the point of service
+            %p People forget service soon after the event. Gather feedback while it is fresh in peoples minds to preserve accuracy.
+          %li
+            %h4 Service is personal
+            %p Everyone has different ideas of what makes good service. Universally applied metrics of good/bad won't deliver the best service experience.
+          %li
+            %h4 Reward the good, improve the bad
+            %p Use negative feedback to improve instead of disclipline. Notice and reward improvements and good service.
+          %li
+            %h4 Loyalty begets loyalty - better service = more loyalty
+            %p Use improving quality of service to encourage loyalty with diners.
 
-    %section
-      %header
-        %h1 Ideas
-      = render "shared/idea_card", :title => "Physical feedback checklist", :description => "There are lots of points of 'downtime' within any meal. A tactile, physical system where you can express your feedback without it feeling too personal - for instance, a set of marbles you put into marked areas which are later tallied."
-      = render "shared/idea_card", :title => "Interuption moments", :description => "When is it best to ask a diner for feedback? There are a few 'obvious' interuption moments; Bathroom, payment, between courses, when leaving, after leaving via a CRM reminder, after leaving by memory."
-      = render "shared/idea_card", :title => "Exposed metrics to evaluate service", :description => "Were you happy with long your meal took? Did your waiting staff check in too often or too rarely? How long did you wait for the bill? Using simple responses to these questions, we can build a profile of diner preferences which are exposed to wait staff, so they have the best possibly information on the diners next visit."
-      = render "shared/idea_card", :title => "", :description => ""
+    %section.content
+      %h3 Ideas
+      %div
+        = render "shared/idea_card", :title => "Physical feedback checklist", :description => "There are lots of points of 'downtime' within any meal. A tactile, physical system where you can express your feedback without it feeling too personal - for instance, a set of marbles you put into marked areas which are later tallied."
+        = render "shared/idea_card", :title => "Interuption moments", :description => "When is it best to ask a diner for feedback? There are a few 'obvious' interuption moments; Bathroom, payment, between courses, when leaving, after leaving via a CRM reminder, after leaving by memory."
+        = render "shared/idea_card", :title => "Exposed metrics to evaluate service", :description => "Were you happy with long your meal took? Did your waiting staff check in too often or too rarely? How long did you wait for the bill? Using simple responses to these questions, we can build a profile of diner preferences which are exposed to wait staff, so they have the best possibly information on the diners next visit."
+        = render "shared/idea_card", :title => "", :description => ""
 
-    %section
-      %header
-        %h1 Development
-      %p For the purposes of development of my concept into a set of flows, I made the following assumptions/choices:
-      %ul
-        %li I would focus on the experience for one diner, in one restaurant, with one member of waiting staff who has 1 manager
-        %li Staff all have access to per-user authenticated devices
-      = render "shared/screen", :title => "Physical feedback checklist", :description => ""
+    %section.content
+      %h3 Idea development
+      %div
+        %h2 Exposed metrics to evaluate service
+        %p I decided, after comparing the ideas to my success measures and principles, to focus on using various dining metrics to passively improve peoples service experience. Aknowledging that service preferences differ from person to person, I decided to focus on two main applications; a staff app, and a diner loyalty app.
+        
+        %h4 The diner loyalty app
+        %p Essentially similar in many ways to existing restaurant loyalty services, which are driven by offers, but with some crucial twists. The app would use understood loyalty mechanisms, like coffee stamp cards, to incentivise the friction required in giving feedback. The feedback gathered would be structured, comparable, and measurable. This feedback would be stored against their own diner profile, and the changes to the feedback over time would be measured to offer better service. By encouraging repeat visits over time, the diner doesn't need to be told their service is improving, it just improves.
 
-    %section
-      %header
-        %h1 Testing
+        %h4 The staff app
+        %p The staff app recieves data from the customer app about a customers preferences to inform the staff how they should behave with any particular diner. The staff app would be used as a way of managing tables and also recording relevant data points that give context to customer feedback. By knowing the exact time from the point of ordering food to delivering food to a table, this can give context to customer feedback about waiting times. By agregating this data over time, the member of staff can build up an accurate profile and deliver the best service possible within thei constraints.
 
-    %section
-      %header
-        %h1 Future iterations
-      %p
-        There are many directions it would be possible to take the product into. Some that I have considered but thought to be out of scope for this iteration are:
-      %ul
-        %li Payment within the customer facing app
-        %li Booking tables within the customer facing app
-        %li Recommendation within the cusomter facing app
-        %li Machine learning based assumptions for 'new' diners
-        %li A feedback loop included for the chefs
-        %li Closer links between waiting staff and chefs within staff app to keep the diner informed
-        %li Customer food preferences/allergies
-        %li Other service applications outside of dining
+        %h3 Experience map
+        %p To give a better picture of how this would work in practice, I created an experience map that follows a diner, a waiter, and their manager over one visit.
+        %p For the purposes of development of my concept into an experience map, I made the following assumptions/choices:
+        %ul
+          %li I would focus on the experience for one diner, in one restaurant, with one member of waiting staff who has 1 manager.
+          %li The diner has eaten at this restaurant previously.
+          %li The restuarant is mid-price and local to the diner.
+          %li The diner has filled in a registration and onboarding experience, and as such the waiting staff have access to certain personal information.
+          %li I would focus on a single dining experience.
+          %li Staff all have access to per-user authenticated devices.
+          %li Concierge
+        = render "shared/screen", :class => 'Diner', :title => "App home screen", :description => "The user has entered the restaurant and is invited to 'check-in' to the restuarant."
+        = render "shared/screen", :class => 'Diner', :title => "Restuarant welcome", :description => "Once checked in, they are welcomed and reminded what they ate at their last visit. They are shown their loyalty status and any offers they can redeem."
+        = render "shared/screen", :class => 'Waiter', :title => "New Diner screen", :description => "The waiter is alerted that the diner has arrived and can appropriately greet and seat the diner. The waiter selects the type of group [single, family, couple, mixed-age] from a pre-defined selection."
+        = render "shared/screen", :class => 'Waiter', :title => "During dining", :description => "During dining, the waiter has access to previous diner preferences in terms of service, as well as typical preferences based on the type of group."
+        = render "shared/screen", :class => 'Waiter', :title => "During dining", :description => "The waiter records the time when each course was ordered, brought to the table, and finished."
+        = render "shared/screen", :class => 'Diner', :title => "During dining", :description => "The diner can use the app to call for the waiters attention if needed."
+        = render "shared/screen", :class => 'Waiter', :title => "After dining", :description => "The waiter brings the bill to the diner at an appropriate time based on their previous experience and preferences."
+        = render "shared/screen", :class => 'Diner', :title => "After dining", :description => "After recieving the bill, the diner is prompted to give some feedback about their experience. In exchange for this, they will recieve extra loyalty benefits."
+        = render "shared/screen", :class => 'Diner', :title => "After dining", :description => "The diner records their opinion on various service metrics, including: Time waiting for food, time between courses, attentiveness of waiter, demeanor of waiter and others. These are mostly not inherantly good or bad scores, as the preference will differ from diner to diner. The diner can also add free text comments on any metric."
+        = render "shared/screen", :class => 'Waiter', :title => "After dining", :description => "The waiter can review this feedback against the data recorded earlier about course timing and the type of group, and it is added to the personal dining profile of the diner. Using the data, over time a picture is built up of the diners preferences. At the diners next visit, the waiter can alter their behaviour accordingly."
+        = render "shared/screen", :class => 'Manager', :title => "After dining", :description => "The manager reviews feedback in aggregate. The can see the verious different dining personas built up and see if overall satisfaction is improving. They can use the data collected to better plan staffing patterns."
+        = render "shared/screen", :class => 'Waiter', :title => "The future", :description => "The waiter profile is built up over time. As service is shown to be personal, their ability to adapt to the personal needs of diners is measured over time. The waiter can use this information in future career applications."
+
+    %section.content
+      %h3 Testing
+      %div
+
+    %section.content
+      %h3 Future iterations
+      %div
+        %p
+          There are many directions it would be possible to take the product into. Some that I have considered but thought to be out of scope for this iteration are:
+        %ul
+          %li Payment within the customer facing app
+          %li Help with choosing a restaurant in the customer facing app
+          %li Task management and assignment of tasks within the staff app
+          %li Booking tables within the customer facing app
+          %li Recommendation within the cusomter facing app
+          %li Machine learning based assumptions for 'new' diners
+          %li Diners can earn loyalty tiers, similar to an airline or Starbucks, where certain benefits are then permanent.
+          %li A feedback loop included for the chefs
+          %li Closer links between waiting staff and chefs within staff app to keep the diner informed
+          %li Customer food preferences/allergies
+          %li Other service applications outside of dining
