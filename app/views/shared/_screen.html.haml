@@ -1,6 +1,7 @@
 .screen{:class => type}
-	.image
-		= image_tag image
+	= if local_assigns[:image]
+		.image
+			= image_tag image
 	%h4
 		= title
 	%p
