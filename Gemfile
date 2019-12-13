@@ -29,6 +29,18 @@ gem 'jbuilder', '~> 2.5'
 gem "haml-rails", "~> 2.0"
 # Use Redis adapter to run Action Cable in production
 gem 'image_optim'
+
+
+##### warnings
+gem "actionview", ">= 5.1.6.2"
+gem "nokogiri", ">= 1.10.4"
+gem "sprockets", ">= 3.7.2"
+gem "ffi", ">= 1.9.24"
+gem "activejob", ">= 5.1.6.1"
+gem "rack", ">= 2.0.6"
+gem "rails-html-sanitizer", ">= 1.0.4"
+gem "loofah", ">= 2.3.1"
+gem "rubyzip", ">= 1.3.0"
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
