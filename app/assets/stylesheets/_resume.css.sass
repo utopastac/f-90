@@ -38,7 +38,7 @@ section#resume
           // color: $green
 
       header
-        @include columnsWide(4, $screen-m)
+        @include columnsWide(3, $screen-m)
         text-align: right
         padding-right: 3em
         position: relative
@@ -66,13 +66,15 @@ section#resume
 
       .content
         @include columnsWide(7, $screen-m)
-        padding-bottom: 2.5em
+        padding-bottom: 3.5em
 
     h4, h5, h6
       font-weight: 200
+      line-height: 1.35
 
     h4
       line-height: 1.35
+      @extend %title-1
 
       span
         background-color: $yellow

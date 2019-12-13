@@ -51,7 +51,12 @@ $serif: "futura-pt", sans-serif//"grad", serif
 
 %heading-0
   font-family: $sans
-  @include fontSize(20, 18)
+  @include fontSize(20, 24)
+  font-weight: 300
+
+%title-1
+  font-family: $sans
+  @include fontSize(28, 34)
   font-weight: 300
 
 
@@ -84,8 +89,8 @@ p, li
 figcaption
   @extend %body-0
   padding-left: 1em
-  border-left: 2px solid $text-colour
-  //color: rgba($text-colour, 0.75)
+  border-left: 2px solid $light-text-colour
+  color: rgba($light-text-colour, 0.75)
 
 p.large
   @extend %body-2
