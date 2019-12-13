@@ -1,11 +1,15 @@
 %li
   = link_to path do
-    .image
-      = image_tag img
-    .content
-      %h3
-        = title
+    %header
       %h5
-        = meta
+        = date
       %p
-        = detail
+        = role
+
+    / .image
+    /   = image_tag img
+    .content
+      / %h3
+      /   = title
+      %h4
+        = raw detail
