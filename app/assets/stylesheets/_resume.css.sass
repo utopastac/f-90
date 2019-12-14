@@ -19,17 +19,18 @@ section#resume
 
   li
 
-    &:not(:last-child)
-      a
-        header
-          &:before
-            content: ""
-            position: absolute
-            top: calc(#{$dot-offset} + #{$dot-size})
-            right: calc(1em + #{$dot-size/2} - 1px)
-            bottom: -$dot-offset
-            width: 2px
-            border-left: 2px solid $text-colour
+    @include min($screen-m)
+      &:not(:last-child)
+        a
+          header
+            &:before
+              content: ""
+              position: absolute
+              top: calc(#{$dot-offset} + #{$dot-size})
+              right: calc(1em + #{$dot-size/2} - 1px)
+              bottom: -$dot-offset
+              width: 2px
+              border-left: 2px solid $text-colour
 
     > a
       @extend .row
@@ -44,29 +45,24 @@ section#resume
 
       header
         @include columnsWide(4, $screen-m)
-        text-align: right
         padding-right: 3em
         position: relative
 
-        &:after
-          content: ""
-          position: absolute
-          top: $dot-offset
-          right: 1em
-          width: $dot-size
-          height: $dot-size
-          border: 2px solid $text-colour
-          border-radius: 500px
+        @include max($screen-m)
+          margin-bottom: 1em
 
-      .image
-        @include columnsWide(3, $screen-m)
-        padding-right: 1em
-        overflow: hidden
-        margin-bottom: 1em
+        @include min($screen-m)
+          text-align: right
 
-        img
-          width: 100%
-          border-top-right-radius: 1em
+          &:after
+            content: ""
+            position: absolute
+            top: $dot-offset
+            right: 1em
+            width: $dot-size
+            height: $dot-size
+            border: 2px solid $text-colour
+            border-radius: 500px
         
 
       .content

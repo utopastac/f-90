@@ -3,25 +3,25 @@
 
 .row
   .main-content
-    %h1 I’m Peter, a product designer, creative prototyper, & researcher.
+    %h1 I’m Peter, a principal product designer, creative prototyper, & researcher.
     %h2
       %span
-        I’ve worked in
-        = link_to "startups", circles_path
-        , huge
-        = link_to "companies", marksandspencer_path
-        , co-founded a
-        = link_to "toy company", playpress_path
-        , and been part of digital
-        = link_to "transformations.", advertising_path
+        I’ve worked at&nbsp
+        %span>= link_to "tech giants", google_path
+        , founded&nbsp
+        %span>= link_to "startups", circles_path
+        , created a&nbsp
+        %span>= link_to "toy company", playpress_path
+        , and led design for internal&nbsp
+        %span>= link_to "innovation teams.", marksandspencer_path
     %h2
-      I design and facilitate creative
-      = link_to "workshops", workshops_path
-      , 
-      = link_to "design sprints", design_sprints_path
-      , and have extensive front-end 
-      = link_to "development", front_end_path
-      experience.
+      I design and facilitate creative&nbsp
+      %span>= link_to "workshops", workshops_path
+      , &nbsp
+      %span>= link_to "design sprints", design_sprints_path
+      , and have extensive front-end&nbsp 
+      %span>= link_to "development", front_end_path
+      &nbspexperience.
   .side-content
     = render "shared/contact_list"
 
