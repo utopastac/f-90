@@ -5,19 +5,16 @@
 .row
   .main-content
     = render "shared/blog_intro", :title => "Spotify", :content => "As an Associate principal product designer in the premium mission, I am responsible for driving design strategy and craft in our focus area. I am through practice to make the output of those I work with better."
-      
-    = render "shared/gallery", :img => "marks-main.jpg", :cap => ""
 
-    = render "shared/blog_section", :title => "Premium", :content => "", :id => "premium"
+    = render "shared/blog_section", :title => "Premium", :content => "I joined Spotify as one of the design leads for the premium mission, defining opportunities and propositions for improving users experience with Spotify Premium. I am leading an initiative to map our user needs, and am a constant advocate for product quality. I am involved in shaping the strategic direction of the team and defining our processes and needs for 2020.", :id => "premium"
+
+    = render "shared/blog_section", :title => "Process", :content => "With other Principal leads, I am currently driving the strategy and cross-functional adoption of a new product design process. I am working to actively improve design team values, processes, and tooling across the Premium mission, and drive a new understanding of cross-functional collaboration.", :id => "process"
+
+    = render "shared/blog_section", :title => "Mentorship", :content => "A large part of my role is to mentor less senior members of the design team across the whole Premium mission. I run regular group working sessions and try to lead by example, and am constantly trying to make my colleagues ideas and behaviours better.", :id => "mentorship"
 
     = render "shared/quotes", :quotes => [{content: "From day one, nay, scratch that, from DAY ZERO, Peter has brought an absurdly positive spirit and ridiculously healthy gratitudinal vibes to our lil' group of Premium Design humans.", attribution: "Design manager"}, {content: "Since he's started working with WTB, Peter has been super collaborative, open, kind, inspiring and so much fun - and I can't wait to see what we will achieve together in 2020. Thanks for all your support so far <3.", attribution: "Product lead"}, {content: "Kudos for hitting the ground running and being such a team player from day 1! The passion, ideas, and thoughtfulness you've brought to the design team in your short time at Spotify has been SO APPRECIATED.", attribution: "Content lead"}]
 
-    = render "shared/blog_section", :title => "Process", :content => "", :id => "process"
-
-    = render "shared/blog_section", :title => "Mentorship", :content => "", :id => "mentorship"
-
-
-    = render "shared/gallery", :img => "marks-cook-app.jpg", :cap => "..."
+    
 
   .side-content.fixed
     = render "shared/blog_meta", :date => "2019 - now", :role => "Associate principal product designer"
