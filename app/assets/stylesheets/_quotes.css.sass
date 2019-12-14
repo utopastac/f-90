@@ -1,4 +1,9 @@
 #quotes
+  padding: 2em
+  border: 3px solid $yellow
+  border-radius: 1em
+  margin-top: 6em
+  
   ul
     @include min($screen-m)
       display: flex
@@ -7,5 +12,18 @@
   li
     @include min($screen-m)
       width: 50%
-    padding: 1em
-    border: 1px solid $grey-light
+    padding: 1em 1em 2em 1em
+    position: relative
+
+    &:before
+      content: '‟'
+      float: left
+      @include fontSize(140, 120)
+      line-height: 0.85
+      height: 3rem
+      margin-right: 1rem
+      color: $yellow
+      font-weight: 500
+
+    h6
+      margin-top: 1em

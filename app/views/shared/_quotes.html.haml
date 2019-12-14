@@ -2,5 +2,7 @@
   %ul
     - quotes.each do |quote|
       %li
-        %h4
-          = quote
+        %h5
+          = quote[:content]
+        %h6
+          =quote[:attribution]
