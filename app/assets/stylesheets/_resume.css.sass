@@ -50,6 +50,9 @@ section#resume
           background: $green
 
       header
+
+        h4
+
         @include columnsWide(4, $screen-m)
         padding-right: 3em
         position: relative
@@ -77,13 +80,19 @@ section#resume
         position: relative
         background: white
 
+        h4
+          line-height: 1.35
+          @extend %title-1
+
     h4, h5, h6
       font-weight: 200
-      line-height: 1.35
+      line-height: 1.2
 
-    h4
-      line-height: 1.35
-      @extend %title-1
+    h5
+      font-weight: 600
+      
+      
+      @extend %heading-0
 
       span
         background-color: $yellow

@@ -1,19 +1,17 @@
 #quotes
   padding: 2em
-  border: 3px solid $yellow
+  border: 3px solid $green
   border-radius: 1em
   margin-top: 6em
   
   ul
     @include min($screen-m)
-      display: flex
-      flex-wrap: wrap
+      columns: 2
 
   li
-    @include min($screen-m)
-      width: 50%
     padding: 1em 1em 2em 1em
     position: relative
+    break-inside: avoid-column
 
     &:before
       content: '‟'
@@ -22,7 +20,7 @@
       line-height: 0.85
       height: 3rem
       margin-right: 1rem
-      color: $yellow
+      color: $green
       font-weight: 500
 
     h6
