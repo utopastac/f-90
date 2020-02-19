@@ -4,7 +4,13 @@
 
 .row
   .main-content
-    = render "shared/blog_intro", :title => "About me", :content => "How I like to work, what value I can add, and things you should know about me.<br><a href='https://medium.com/@utopastac/how-to-make-good-things-while-being-good-to-each-other-3a98236529da' target='_blank'>How I work</a>"
+    = render "shared/blog_intro", :title => "About me", :content => "How I like to work, what value I can add, and things you should know about me."
+
+    = link_to "https://medium.com/@utopastac/how-to-make-good-things-while-being-good-to-each-other-3a98236529da", :id => "article-link" do
+      %header
+        %h2 How to make good things while being good to each other
+        %h4 My list of commandments for making products in a happy and healthy team.
+        %h5 Read on Medium
       
     = render "shared/blog_section", :title => "Mission statement", :content => "I enable people to make their ideas, strategy, output, and design environment better by producing impactful work, cross-functional mentoring, and facilitating innovation to improve products at a high velocity.", :id => "mission-statement"
 
