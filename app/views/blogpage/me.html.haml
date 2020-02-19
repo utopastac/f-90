@@ -1,0 +1,21 @@
+- content_for :title, "Me - how I work, and what i'm like to work with"
+- @body_id = "me"
+- @body_class = "pink"
+
+.row
+  .main-content
+    = render "shared/blog_intro", :title => "About me", :content => "How I like to work, what value I can add, and things you should know about me."
+      
+    = render "shared/blog_section", :title => "Mission statement", :content => "I enable people to make their ideas, strategy, output, and design environment better by producing impactful work, cross-functional mentoring, and facilitating innovation to improve products at a high velocity.", :id => "mission-statement"
+
+    = render "shared/blog_section", :title => "Strengths", :content => "I bring out the best in other people and can make other people’s ideas better, especially when facilitating small groups. I work very fast and, love to share very early, and am not precious or dogmatic. I am good at pushing teams to think beyond their existing thinking. I excell when working strategically on open ended and ambiguous things.", :id => "strengths"
+
+    = render "shared/blog_section", :title => "Motivations", :content => "People. Velocity. Change. New Information.", :id => "motivations"
+
+    = render "shared/blog_section", :title => "Where I work best", :content => "At home in the evenings or in the few precious hours before lunch. With other people, in collaborative, open sessions.  Never before 10 am. In situations that encourage (and celebrate) curiosity and playfulness.", :id => "where"
+
+    = render "shared/blog_section", :title => "Interaction norms", :content => "I have high expectations of how people interact with each other, and hugely value respect and kindness. Small groups of focused people is my prefered form (why I love facilitating workshops). I am soft, open, informal, and thoughful in my language. I actively enjoy impossible deadlines with very clear expectations.", :id => "interaction"
+
+  .side-content.fixed
+    = render "shared/blog_navigation", :anchors => [{title: "Mission statement", link: "#mission-statement"}, {title: "Strengths", link: "#strengths"}, {title: "Motivations", link: "#motivations"}, {title: "Where", link: "#where"}, {title: "Interaction", link: "#interaction"}]
+    

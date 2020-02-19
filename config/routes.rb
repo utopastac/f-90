@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get '/workshops', to: 'blogpage#workshops', as: 'workshops'
   get '/design-sprints', to: 'blogpage#design_sprints', as: 'design_sprints'
   get '/front-end', to: 'blogpage#front_end', as: 'front_end'
+  get '/me', to: 'blogpage#me', as: 'me'
 
   get '/secret/google', to: 'secretpage#google_project', as: 'google_secret'
 
