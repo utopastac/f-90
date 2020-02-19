@@ -1,4 +1,5 @@
 $dot-size: 12px
+$line-width: 2.5px
 $dot-offset: 0.5em
 
 section#resume
@@ -18,6 +19,7 @@ section#resume
     @include offset(1, $screen-m)
 
   li
+    display: block
 
     @include min($screen-m)
       &:not(:last-child)
@@ -29,19 +31,23 @@ section#resume
               top: calc(#{$dot-offset} + #{$dot-size})
               right: calc(1em + #{$dot-size/2} - 1px)
               bottom: -$dot-offset
-              width: 2px
-              border-left: 2px solid $text-colour
+              width: $line-width
+              border-left: $line-width solid $text-colour
 
     > a
       @extend .row
       text-decoration: none
       font-weight: inherit
+      position: relative
 
       &:hover
-        //text-decoration: underline
-        h2, h3
-          // background-color: $text-colour
-          // color: $green
+        header
+          &:after
+            border-color: transparent
+            background: $text-colour
+
+        span
+          background: $green
 
       header
         @include columnsWide(4, $screen-m)
@@ -61,13 +67,14 @@ section#resume
             right: 1em
             width: $dot-size
             height: $dot-size
-            border: 2px solid $text-colour
+            border: $line-width solid $text-colour
             border-radius: 500px
         
 
       .content
         @include columnsWide(8, $screen-m)
         padding-bottom: 4em
+        position: relative
         background: white
 
     h4, h5, h6
