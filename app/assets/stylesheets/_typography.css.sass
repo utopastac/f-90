@@ -9,7 +9,10 @@ $serif: "futura-pt", sans-serif//"grad", serif
 %block-link
   display: inline-block
   background-color: $yellow
+  @include animate(0.15s)
   &:hover
+    transform: scale(1.1)
+    z-index: 1000
     background-color: $text-colour
     color: $green
 
