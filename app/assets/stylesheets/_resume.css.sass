@@ -41,20 +41,22 @@ section#resume
       position: relative
 
       span
-        background-color: $yellow
+        @extend %block-link
+        text-decoration: underline
 
       &:hover
         header
           &:after
             border-color: transparent
             background: $text-colour
-
         span
-          background: $green
+          transform: scale(1.05)
+          box-shadow: 4px 4px 0 0 $yellow
+          z-index: 1000
+          background-color: $green
+          color: $text-colour
 
       header
-
-        h4
 
         @include columnsWide(4, $screen-m)
         padding-right: 3em
@@ -94,4 +96,3 @@ section#resume
     h5
       font-weight: 600      
       @extend %heading-0
-    a
