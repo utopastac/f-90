@@ -6,7 +6,8 @@ ul#contact-list
 .home-link
   @extend %heading-1
   margin-bottom: 2rem
-  display: flex
+  display: inline-flex
+  padding: 0 0.2em
   align-items: center
   text-decoration: none
   position: relative
@@ -18,6 +19,10 @@ ul#contact-list
     margin-right: 8px
     background: image-url("nav-arrow.png") no-repeat center center
     background-size: auto 100%
+
+  &:hover
+    text-decoration: underline
+    background-color: $green
 
 #meta-display
   position: absolute
