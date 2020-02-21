@@ -40,16 +40,14 @@ section#resume
       font-weight: inherit
       position: relative
 
-      span
-        @extend %block-link
-        text-decoration: underline
-
       &:hover
-        header
+        h4, h5
+          text-decoration: underline
+        header            
           &:after
             border-color: transparent
             background: $text-colour
-        span
+        .content span
           transform: scale(1.05)
           box-shadow: 4px 4px 0 0 $yellow
           z-index: 1000
@@ -84,6 +82,10 @@ section#resume
         padding-bottom: 4em
         position: relative
         background: white
+
+        span
+          @extend %block-link
+          text-decoration: underline
 
         h4
           line-height: 1.35
