@@ -75,6 +75,15 @@ $grid-max-width: 100%
     right: auto
     @include columnsWide(3, $screen-m)
 
+#home
+  .main-content
+    padding-top: 3em
+  .side-content
+    .contact-list
+      a
+        @extend %block-link
+        background-color: transparent
+
 section.content
   @extend .row
   margin-top: 7em
