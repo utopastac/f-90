@@ -1,5 +1,5 @@
 #quotes
-  padding: 2em
+  padding: 5em
   background: white
   margin-top: 6em
   
@@ -8,9 +8,13 @@
       columns: 1
 
   li
-    padding: 1em 1em 2em 1em
+    margin-bottom: 2em
+    padding-bottom: 2em
     position: relative
     break-inside: avoid-column
+    
+    &:not:(last-child)
+      border-bottom: 1px solid $green
 
     h6
       margin-top: 1em
