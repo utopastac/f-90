@@ -1,26 +1,16 @@
 #quotes
   padding: 2em
-  background: $blue-bg
+  background: white
   margin-top: 6em
   
   ul
     @include min($screen-m)
-      columns: 2
+      columns: 1
 
   li
     padding: 1em 1em 2em 1em
     position: relative
     break-inside: avoid-column
-
-    &:before
-      content: '‟'
-      float: left
-      @include fontSize(140, 120)
-      line-height: 0.85
-      height: 3rem
-      margin-right: 1rem
-      color: $blue
-      font-weight: 500
 
     h6
       margin-top: 1em
