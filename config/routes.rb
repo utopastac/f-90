@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/advertising', to: 'blogpage#advertising', as: 'advertising'
   get '/google', to: 'blogpage#google', as: 'google'
   get '/spotify', to: 'blogpage#spotify', as: 'spotify'
+  get '/facebook', to: 'blogpage#facebook', as: 'facebook'
 
   get '/workshops', to: 'blogpage#workshops', as: 'workshops'
   get '/design-sprints', to: 'blogpage#design_sprints', as: 'design_sprints'
