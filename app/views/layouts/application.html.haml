@@ -4,9 +4,12 @@
     %title= content_for?(:title) ? yield(:title) : "Peter Wright portfolio site and resumé"
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, height=device-height,  maximum-scale=1.0, target-densityDpi=device-dpi"}
     %meta{:name => "apple-mobile-web-app-capable", :content => "yes"}
-    %script(src="https://use.typekit.net/fdq4gnc.js")
-    :javascript
-      try{Typekit.load({ async: true });}catch(e){}
+    
+    %link{:rel => :stylesheet, :type => :"text/css", :href => "https://use.typekit.net/pal6slp.css"}
+    
+    //%script(src="https://use.typekit.net/fdq4gnc.js")
+    //:javascript
+      //try{Typekit.load({ async: true });}catch(e){}
 
     //= favicon_link_tag 'touch-icon-iphone.png', rel: 'apple-touch-icon', type: 'image/png'
     
