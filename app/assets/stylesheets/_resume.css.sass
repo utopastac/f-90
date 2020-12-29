@@ -26,7 +26,7 @@ section#resume
         a
           header
             &:before
-              content: ""
+              //content: ""
               position: absolute
               top: calc(#{$dot-offset} + #{$dot-size})
               right: calc(1em + #{$dot-size/2} - 1px)
@@ -55,7 +55,7 @@ section#resume
 
       header
 
-        @include columnsWide(4, $screen-m)
+        @include columnsWide(5, $screen-m)
         padding-right: 3em
         position: relative
 
@@ -66,7 +66,7 @@ section#resume
           text-align: right
 
           &:after
-            content: ""
+            //content: ""
             position: absolute
             top: $dot-offset
             right: 1em
@@ -77,7 +77,7 @@ section#resume
         
 
       .content
-        @include columnsWide(8, $screen-m)
+        @include columnsWide(7, $screen-m)
         padding-bottom: 4em
         position: relative
         background: white
