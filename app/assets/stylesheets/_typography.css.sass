@@ -20,17 +20,17 @@ $serif: "futura-pt", sans-serif//"grad", serif
 
 %body-2
   font-family: $serif
-  @include fontSize(28, 34)
+  @include fontSize(28, 36)
 
 %body-1
-  @include fontSize(20, 27)
+  @include fontSize(22, 30)
   font-weight: 100
   @include min($screen-m)
-    @include fontSize(22, 30)
+    @include fontSize(24, 32)
 
 %body-0
   //font-family: $serif
-  @include fontSize(17, 23)
+  @include fontSize(20, 28)
   //font-style: italic
 
 
@@ -50,8 +50,11 @@ $serif: "futura-pt", sans-serif//"grad", serif
 
 %heading-2
   font-family: $sans
-  @include fontSize(32, 36)
-  font-weight: 300
+  @include fontSize(24, 32)
+  font-weight: 600
+  @include min($screen-m)
+    @include fontSize(28, 36)
+    font-weight: 300
 
 %heading-1
   font-family: $sans
