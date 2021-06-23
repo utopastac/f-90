@@ -8,15 +8,16 @@ $serif: "Inter", sans-serif//"grad", serif
 
 %block-link
   display: inline-block
-  background-color: $yellow
+  //background-color: $yellow
   padding: 0 0.1em
   @include animate(0.02s)
   &:hover
+    opacity: 0.85
     // transform: scale(1.08)
-    box-shadow: 4px 4px 0 0 $yellow
-    z-index: 1000
-    background-color: $text-colour
-    color: $green
+    //box-shadow: 4px 4px 0 0 $yellow
+    //z-index: 1000
+    //background-color: $text-colour
+    //color: $green
 
 %body-2
   font-family: $serif
@@ -107,7 +108,7 @@ p.large
   @extend %body-2
 
   a
-    background: $yellow
+    //background: $yellow
     font-weight: 500
 
 h1, h2, h3, h4, h5, h6 p
