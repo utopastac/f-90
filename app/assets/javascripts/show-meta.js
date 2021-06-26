@@ -5,7 +5,7 @@
   for(var i=0; i<links.length; i++){
     links[i].addEventListener("click", function(event){
       var target = metaActive ? 0 : -window.innerWidth*0.7;
-      TweenMax.to(meta, 0.5, {x:target, ease: Power2.easeOut});
+      TweenMax.to(meta, 0.24, {x:target, ease: Power2.easeOut});
       metaActive = !metaActive;
       event.preventDefault();
     });
