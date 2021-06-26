@@ -4,3 +4,19 @@
   - anchors.each do |anchor|
     %li{:class => "scroll", :href => anchor[:link]}
       %span= anchor[:title]
+%ol#page-navigation
+  %h6 Work
+  %li
+    = link_to "Facebook", facebook_path
+  %li
+    = link_to "Spotify", spotify_path
+  %li
+    = link_to "Google", google_path
+  %li
+    = link_to "Circles", circles_path
+  %li
+    = link_to "M&S", marksandspencer_path
+  %li
+    = link_to "Advertising & Agency", advertising_path
+  %li
+    = link_to "Playpress", playpress_path
