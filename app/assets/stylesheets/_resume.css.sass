@@ -62,6 +62,10 @@ section#resume
         @include columnsWide(5, $screen-m)
         padding-right: 3em
         position: relative
+        
+        h4, h5
+          line-height: 1.5
+          @extend %title-1
 
         @include max($screen-m)
           margin-bottom: 1em
@@ -88,10 +92,6 @@ section#resume
         span
           @extend %block-link
           text-decoration: underline
-
-        h4, h5
-          line-height: 1.5
-          @extend %title-1
 
     h4, h5, h6
       font-weight: 400
