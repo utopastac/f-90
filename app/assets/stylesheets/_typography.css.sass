@@ -21,7 +21,9 @@ $serif: "Inter", sans-serif//"grad", serif
 
 %body-2
   font-family: $serif
-  @include fontSize(28, 1.5)
+  @include fontSize(24, 1.5)
+  @include min($screen-m)
+    @include fontSize(28, 1.5)
 
 %body-1
   @include fontSize(20, 1.5)
