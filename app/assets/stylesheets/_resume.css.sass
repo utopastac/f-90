@@ -4,7 +4,9 @@ $dot-offset: 0.5em
 
 section#resume
   margin: 15em 0 0 0
-  padding: 5em 4em 0 4em
+  padding: 5em 2em 0 2em
+  @include min($screen-m)
+    padding: 5em 4em 0 4em
   border: 5px solid $text-colour
   @extend .row
   @include columnsWide(10, $screen-m)
